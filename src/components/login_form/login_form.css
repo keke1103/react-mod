@@ -1,0 +1,22 @@
+.login{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login :global(.login-form) {
+    width: 300px;
+}
+
+.login :global(.login-form-button) {
+    width: 100%;
+}
+
+.login :global(.ant-input-group-wrapper){
+    width: 100%;
+}
+
+.login :global(.head){
+    margin-bottom: 25px;
+    text-align: center;
+}

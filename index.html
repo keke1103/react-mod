@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>智蜂管理后台</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="shortcut icon" href="/build/icon.png">
+        <link rel="stylesheet" href="/build/antd.css?t=1510218744433">
+        <link rel="stylesheet" href="/build/app.css?t=1510218744433">
+        <style>
+            @-webkit-keyframes uil-ring-anim {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @-moz-keyframes uil-ring-anim {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @-webkit-keyframes uil-ring-anim {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @-o-keyframes uil-ring-anim {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes uil-ring-anim {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+            .uil-ring-css {
+                background: none;
+                position: fixed;
+                width: 200px;
+                height: 200px;
+                top: 50%;
+                left: 50%;
+                margin-top: -100px;
+                margin-left: -100px;
+                -webkit-transform:scale(0.6);
+                transform:scale(0.6);
+            }
+            .uil-ring-css > div {
+                position: absolute;
+                width: 160px;
+                height: 160px;
+                border-radius: 80px;
+                box-shadow: 0 3px 0 0 #59ebff;
+                -webkit-transform-origin: 80px 81.5px;
+                transform-origin: 80px 81.5px;
+                -webkit-animation: uil-ring-anim 1s linear infinite;
+                animation: uil-ring-anim 1s linear infinite;
+            }
+        </style>
+    </head>
+    <body>
+    <article id="app">
+        <div class='uil-ring-css'><div></div></div>
+    </article>
+    <script src="/build/plugins.js?t=1510218744433"></script>
+    <script src="/build/bundle.js?t=1510218744433"></script>
+</body>
+</html>

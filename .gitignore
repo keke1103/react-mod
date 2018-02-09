@@ -1,0 +1,7 @@
+.idea
+*.backup*
+# front-end config
+node_modules/
+build/*.css
+build/*.js
+package-lock.json
