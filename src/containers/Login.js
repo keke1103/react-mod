@@ -1,16 +1,16 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import {connect} from 'react-redux';
-
+import PropTypes from 'prop-types';
 import LoginForm from '../components/login_form';
-//登录界面
-class Login extends Component{
 
-    //初始化state参数
-    getInitialState(){
-        return {
-            isFetching:false
-        }
-    }
+
+/**
+ * @url https://www.cnblogs.com/wonyun/p/5930333.html
+ */
+class Login extends Component{
+    static propTypes = {
+        isFetching:PropTypes.bool.isRequired
+    };
 
     //构造函数
     constructor(){
@@ -29,6 +29,8 @@ class Login extends Component{
         )
     }
 };
+
+
 
 const mapStateToProps = (state) => {
     const {isFetching} = state.roleReducer;

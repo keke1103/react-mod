@@ -1,4 +1,5 @@
-import React, {Component, PropTypes} from 'react'
+import React, {Component} from 'react'
+import PropTypes from 'prop-types';
 import {Router, browserHistory} from 'react-router'
 import {Provider} from 'react-redux'
 
@@ -8,10 +9,10 @@ import routes from '../common/routes'
 const store = configStore();
 
 export default class App extends Component {
-    static PropTypes = {
-        store: PropTypes.object.isRequired,
-        routes: PropTypes.object.isRequired,
-        browserHistory: PropTypes.object.isRequired
+    static propTypes = {
+        store: PropTypes.object,
+        routes: PropTypes.object,
+        browserHistory: PropTypes.object
     };
     render() {
         return (

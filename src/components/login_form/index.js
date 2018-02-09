@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 import {Form, Icon, Input, Button} from 'antd';
 import md5 from 'blueimp-md5'

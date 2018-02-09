@@ -10,7 +10,6 @@ const rolesPower = (state = {roles: ''}, action) => {
         case RECEIVE_LOGIN:
             return {
                 ...state,
-                roles: action.roles,
                 isFetching: false
             };
         case ERROR_LOGIN:
@@ -34,7 +33,10 @@ const rolesPower = (state = {roles: ''}, action) => {
                 isFetching: false
             };
         default:
-            return state;
+            return {
+                ...state,
+                isFetching: false
+            };
     }
 };
 
