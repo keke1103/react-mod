@@ -8,7 +8,7 @@ import LoginForm from '../components/login_form';
  * @url https://www.cnblogs.com/wonyun/p/5930333.html
  */
 class Login extends Component{
-    static propTypes = {
+    static propTypes = {//初始化属性值类型(isRequired，代表不能为空)
         isFetching:PropTypes.bool.isRequired
     };
 
