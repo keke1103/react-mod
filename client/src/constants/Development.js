@@ -1,8 +1,9 @@
 /**
- * Created by Apple on 2018/5/27.
+ * Created by ke on 2018/5/27.
  */
 
 import React, { Component } from 'react';
+import DevelopmentComp from '../components/development';
 
 export default class Development extends Component{
 
@@ -10,9 +11,6 @@ export default class Development extends Component{
         super();
     }
     render(){
-        return <div>
-            Hello
-        </div>
+        return <DevelopmentComp />
     }
-
 };
