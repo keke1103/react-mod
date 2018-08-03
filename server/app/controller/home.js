@@ -1,10 +1,14 @@
 'use strict';
 
-const Controller = require('egg').Controller;
+const Controller = require('./BaseController');
 
 class HomeController extends Controller {
   async index() {
-    this.ctx.body = 'hi, egg';
+    this.success('hi, egg');
+  }
+  async testFail(){
+   let code = this.ctx.request.query.code ;
+    this.fail(code);
   }
 }
 
