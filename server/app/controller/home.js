@@ -4,14 +4,15 @@ const Controller = require('./BaseController');
 
 class HomeController extends Controller {
   async index() {
-    this.success('hi, egg');
+    this.success('hi, egg f');
   }
-  async testFail(){
-   let code = this.ctx.request.query.code ;
+  async testFail() {
+    const code = this.ctx.request.query.code;
     // this.fail(code);
     //   this.fail(ERROR(code));
-    
-      throw code;
+
+
+    throw code;
   }
 }
 
